@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3</title>
+    <link rel="stylesheet" href="produtoamostra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Giga:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="card card1">
+                <h2>LADO A</h2>
+                <img src="image/hamburguer.png" alt="" class="produto">
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="card card2">
+                <h2>LADO A</h2>
+                <img src="image/hamburguer.png" alt="" class="produto">
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), { // codigo da biblioteca da vanilla, VanillaTilt.init() essa função é usada pra iniciar partes especificas dos elementos, com a queryselectorAll 
+		max: 20,                                                        // eu seleciono todos os elementos que estão na classe card, que no caso é a imagem, h2, botão, enfins.
+		speed: 400,                                                      // as propriedades que foram utilizadas: o max vai definir o tanto que o angulo ira se inclinar, no caso o card. o speed é a velocidade da transição
+        glare: true, //deixar brilho                                  // ao se passar o cursor. e o glare dara um brilho na transição(card).
+        "max-glare": 0.4 // suavizar brilho
+        
+            });//codigo geral para movimentar o card
+        </script>
+</body>
+</html>
